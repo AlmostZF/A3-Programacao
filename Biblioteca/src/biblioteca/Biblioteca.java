@@ -4,10 +4,10 @@ public class Biblioteca {
 
     public static void main(String[] args) {
         //TESTES DE LIVROS PARA CADASTRO
-        LivrodeCulinaria teste = new LivrodeCulinaria("Este é um livro de culinária", "gabriel", "casa", 1500, "comida rapida", "mineira");
-        LivrodeCulinaria teste2 = new LivrodeCulinaria("Este é outro livro de culinária", "jose", "teste", 2, "aviao", "helicoptero");
-        LivroDidatico teste3 = new LivroDidatico("Calculo Aplicado", "José", "Abril", 100, "Ensino", "Matemática", 5);
-        LivroDeFiccao teste4 = new LivroDeFiccao("Livro de Ficcao", "Antonio", "Março", 757, "Ficcao", "Azul", "Terror");
+        LivrodeCulinaria livrodeCulinaria = new LivrodeCulinaria("Este é um livro de culinária", "gabriel", "casa", 1500, "comida rapida", "mineira");
+        LivrodeCulinaria livrodeCulinaria1 = new LivrodeCulinaria("Este é outro livro de culinária", "jose", "teste", 2, "aviao", "helicoptero");
+        LivroDidatico livroCalculo = new LivroDidatico("Calculo Aplicado", "José", "Abril", 100, "Ensino", "Matemática", 5);
+        LivroDeFiccao livroFiccao = new LivroDeFiccao("Livro de Ficcao", "Antonio", "Março", 757, "Ficcao", "Azul", "Terror");
 
         //CHAMANDO A FUNÇÃO QUE VAI PARA O MENU PRINCIPAL
         exibeMenu();
