@@ -157,7 +157,7 @@ abstract public class Livro {
      *
      * @param novoLivro O livro a ser adicionado à lista.
      */
-    static void addLivro(Livro novoLivro) {
+    public static void addLivro(Livro novoLivro) {
         for (int i = 0; i < listaLivros.length; i++) {
             if (listaLivros[i] == null) {
                 listaLivros[i] = novoLivro;
@@ -175,7 +175,7 @@ abstract public class Livro {
      * @param novaEditora a nova editora do livro
      * @param novoGenero o novo gênero do livro
      */
-    static void alteraLivro(int index, String novoTitulo, String novoAutor, String novaEditora, String novoGenero) {
+    public static void alteraLivro(int index, String novoTitulo, String novoAutor, String novaEditora, String novoGenero) {
         Livro livro = listaLivros[index - 1];
         if (livro == null) {
             System.out.println("Nenhum livro encontrado nesse índice.");
@@ -194,7 +194,7 @@ abstract public class Livro {
      * @param index o índice do livro a ser removido
      * @param livro a instância do livro a ser removido
      */
-    static void removerLivro(int index, Livro livro) {
+    public static void removerLivro(int index, Livro livro) {
         if (index <= 0) {
             System.out.println("Número inválido!");
             return; // Adicionado return para sair do método em caso de índice inválido
@@ -227,7 +227,7 @@ abstract public class Livro {
      *
      * @return a quantidade de livros presentes na lista
      */
-    static int listaQuantidadeLivros() {
+    public static int listaQuantidadeLivros() {
         int quantidadeLivros = 0;
 
         for (int i = 0; i < listaLivros.length; i++) {
